@@ -12,7 +12,7 @@ pipeline {
 
 	stage('RunSCAAnalysisUsingSnyk') {
             steps {		
-				withCredentials([string(credentialsId: 'SNYK_TOKEN', variable: 'SNYK_TOKEN')]) {
+				withCredentials([string(credentialsId: 'd9e70fa5-d626-4979-bf38-6199fce20b42 ', variable: 'd9e70fa5-d626-4979-bf38-6199fce20b42 ')]) {
 					sh 'mvn snyk:test -fn'
 				}
 			}
